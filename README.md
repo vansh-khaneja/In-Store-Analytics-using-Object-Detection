@@ -14,22 +14,22 @@ This project implements Object Detection for performing In-Store Analytics using
 
 ## Introduction
 
-In this project, we used Matryoshka Representation Learning embeddings for efficient multi-query retrieval. The embeddings are generated using `text-embedding-3-small` and `text-embedding-3-large` models and stored in the Qdrant vector database. This approach allows for scalable and accurate retrieval of relevant information from large datasets.
+In this project, we used YOLOv8 model by [Ultralytics](https://docs.ultralytics.com/) for efficiently detecting customers from the video frames in real-time. This can help in getting useful data for the store manager to increase sales.
 
 ## Features
 
-- Fast and efficient way for data retrieval
-- Supports `text-embedding-3-small` and `text-embedding-3-large` models
-- Two stage retrieval for better searching
-- Scalable and high-performance retrieval system
+- Fast and efficient method
+- Uses `yolov8n` model
+- Real time support
+- Optimizable to increase accuarcy
 
 ## Installation
 
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/vansh-khaneja/Multi-Stage-Queries-with-MRL
-    cd Multi-Stage-Queries-with-MRL
+    git clone https://github.com/vansh-khaneja/In-Store-Analytics-using-Object-Detection
+    cd In-Store-Analytics-using-Object-Detection
     ```
 
 2. Set up the Python environment and install dependencies:
@@ -40,20 +40,13 @@ In this project, we used Matryoshka Representation Learning embeddings for effic
     pip install -r requirements.txt
     ```
 
-3. Set up Qdrant:
-
-    Follow the [Qdrant documentation](https://qdrant.tech/documentation/) to install and configure Qdrant on your system.
 
 ## Execution
-1.Create a .env file and create a variable ```OPENAI_API_KEY``` storing your API key.
 
-
-2.Download the dataset for this project [here](https://run.unl.pt/bitstream/10362/135618/1/TEGI0570.pdf) or you can try with your own dataset. Just change the path of the PDF here.
+1.Download the sample Video Dataset for this project [here](https://www.pexels.com/video/people-walking-inside-a-shopping-mall-4750076/) or you can try with your own dataset. Just change the path of the Video here.
 
 ```sh
-    loaders = [
-    PyPDFLoader("/content/TEGI0570.pdf"),
-    ]
+    input_video_path = "c:/Users/testing.mp4"
 ```
 
 
