@@ -1,5 +1,5 @@
-# Multi-Stage-Queries-with-MRL
-This project implements Object Detection for In-Store Analytics using `yolov8n`. This can help in getting using insights for the store manager to analyze and boost up yhe sales by monitoring the crowd at a particular instance in the store. To learn more about the project please refer this [article](link).
+# In-Store Analytics using Object Detection
+This project implements Object Detection for performing In-Store Analytics using `yolov8n` as the per-trained model. This can help in getting using insights for the store manager to analyze and boost up yhe sales by monitoring the crowd at a particular instance in the store. To learn more about the project please refer this [article](link).
 
 ![Alt Text - description of the image](https://github.com/vansh-khaneja/Multi-Stage-Queries-with-MRL/blob/main/image/img1.png)
 
