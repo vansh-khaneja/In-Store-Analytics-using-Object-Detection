@@ -49,6 +49,13 @@ In this project, we used YOLOv8 model by [Ultralytics](https://docs.ultralytics.
     input_video_path = "c:/Users/testing.mp4"
 ```
 
+2. You can also change the model based on the use case. Here in this project we have used ```yolov8n.pt``` model. Please refer [Ultraytics documentation](https://docs.ultralytics.com/models/yolov8/#supported-tasks-and-modes) for learning about different model sizes. You can change the model here.
+   
+```sh
+    from ultralytics import YOLO
+    model = YOLO("yolov8n.pt")
+
+```
 
 3.Execute the ```main.py``` file by running this command in terminal.
 
